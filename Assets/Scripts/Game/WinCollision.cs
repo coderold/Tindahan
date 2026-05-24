@@ -24,6 +24,12 @@ public class WinCollision : MonoBehaviour
             {
                 Debug.LogError("SceneTransitionManager was not found in the scene!");
             }
+
+            TimeLimitManager timer = FindObjectOfType<TimeLimitManager>();
+            if (timer != null)
+            {
+                timer.StopTimer();
+            }
         }
     }
 

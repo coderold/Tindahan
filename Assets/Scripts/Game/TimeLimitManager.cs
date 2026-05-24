@@ -27,6 +27,7 @@ public class TimeLimitManager : MonoBehaviour
         else
         {
             timeRemaining = 0;
+            timerText.text = "";
             TriggerLossTransition();
         }
     }

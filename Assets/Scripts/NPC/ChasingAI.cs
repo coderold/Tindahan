@@ -119,8 +119,6 @@ public class ChasingAI : MonoBehaviour
                 agent.isStopped = false;
                 agent.SetDestination(playerTransform.position);
 
-                // FORCE MOVE OVERRIDE: If the agent gets stuck or animations lock position,
-                // manually slide the transform towards the next NavMesh path point.
                 if (agent.hasPath && agent.velocity.sqrMagnitude < 0.1f)
                 {
                     Vector3 targetDir = (agent.steeringTarget - transform.position).normalized;
@@ -145,19 +143,16 @@ public class ChasingAI : MonoBehaviour
             }
         }
     }
-
-    // New logic combined from your ScareTrigger.cs snippet
     private void ExecuteIntroPull()
     {
         if (pullPlayerForward && playerController != null)
         {
             float distanceToEntity = Vector3.Distance(playerController.transform.position, transform.position);
 
-            // Pull the player forward only if they are outside the stopping threshold
             if (distanceToEntity > stopDistance)
             {
                 Vector3 pullDirection = transform.position - playerController.transform.position;
-                pullDirection.y = 0f; // Lock Y axis to prevent dragging into ground / into air
+                pullDirection.y = 0f; 
                 pullDirection.Normalize();
 
                 playerController.Move(pullDirection * pullSpeed * Time.deltaTime);

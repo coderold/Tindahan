@@ -6574,17 +6574,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1521465635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c77f9e752145dc34f8ac0872f4c26bd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bb3ce711a8fd51459c469e940b0c10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactPromptUI: {fileID: 0}
-  currentItem: 
-  deliveryPhase: 1
-  currentBarya: 0
-  targetBarya: 50
-  baryaText: {fileID: 0}
-  taskText: {fileID: 0}
-  itemText: {fileID: 0}
 --- !u!1 &1529129414
 GameObject:
   m_ObjectHideFlags: 0

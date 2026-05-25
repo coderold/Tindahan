@@ -122,7 +122,7 @@ public class ChasingAI : MonoBehaviour
                 if (agent.hasPath && agent.velocity.sqrMagnitude < 0.1f)
                 {
                     Vector3 targetDir = (agent.steeringTarget - transform.position).normalized;
-                    targetDir.y = 0; // Prevent the AI from floating or sinking
+                    targetDir.y = 0; 
                     transform.position += targetDir * movementSpeed * Time.deltaTime;
                 }
             }

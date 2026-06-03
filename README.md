@@ -65,7 +65,7 @@ Instead of rendering the scene at native resolutions, technical systems were sty
 * **Pixel-Perfect Canvas UI:** To prevent high-definition text overlays from breaking immersion, the UI Canvas Render Mode is set to **Screen Space - Camera** mapped directly to the downscaled camera viewport. This enforces a uniform, jagged pixel filter across the *Barya* counter and item trackers.
 * **Atmospheric Overrides:** A custom Universal Render Pipeline (URP) Global Volume profile applies real-time high-intensity shadows, low ambient environmental light, and an intense **Vignette** to enforce a tunnel-vision effect.
 
-### 🖼️ Blender Model Showcase
+### Blender Model Showcase
 
 | Core Hub: Sari-Sari Store Model | Custom Kapitbahays Model |
 |:---:|:---:|
@@ -75,5 +75,3 @@ Instead of rendering the scene at native resolutions, technical systems were sty
 ### Audio Architecture
 * **Ambient Drone:** Continuous background loop playing scary ambient music to build consistent tension.
 * **Spike Triggers:** Localized 3D spatial audio nodes programmed to fire sudden jumpscare audio spikes featuring terrifying screams and scary chimes.
-
----
